@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bostileiro ou estrangeiro?</title>
+</head>
+<body>
+    <input type="text" name="pais" id="ipais" placeholder="Digite seu país">
+    <input type="button" value="Enviar" onclick="teste()">
+    <div id="res"> 
+    </div>
+
+    <script>
+        function teste(){
+            var txt = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+            var país = txt.value
+
+            if (país == "Brasil"){
+            res.innerHTML = "<p>Seu país é o bostil</p>"
+            } else{
+            res.innerHTML = "<p>Você é estrangeiro!</p>"
+            }
+        
+        }
+    </script>
+</body>
+</html>
