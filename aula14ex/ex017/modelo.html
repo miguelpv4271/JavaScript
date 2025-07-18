@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> <h1> Título </h1> </header>
+    <header> <h1> Tabuada </h1> </header>
 
     <section> 
         <div> 
-            <p> Testando </p>
+            <label for="inum"> Digite um número </label>
+            <input type="number" name="num" id="inum">
+            <input type="button" value="Gerar tabuada" onclick="tabuada()">
         </div>
         <div> 
-            <p> ABABAABABABA </p>
+            <select name="tab" id="itab" size="10"> 
+                <option value="Digite"> Digite um número acima </option>
+            </select>
         </div>
     </section>
 
